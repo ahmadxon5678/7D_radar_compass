@@ -2,7 +2,9 @@
 
 A simple visual tool for getting clear about where you want to be, seeing where you are now, and closing the gap with small weekly actions.
 
-**[Open the app](https://ahmadxon5678.github.io/7D_radar_compass/)** · [Report a bug](https://github.com/ahmadxon5678/7D_radar_compass/issues)
+[Report a bug](https://github.com/ahmadxon5678/7D_radar_compass/issues) · [Contribute](CONTRIBUTING.md)
+
+**Web version:** GitHub Pages still needs to be enabled. Once enabled, the app will be at [ahmadxon5678.github.io/7D_radar_compass](https://ahmadxon5678.github.io/7D_radar_compass/). You can already download the app or run it locally using the steps below.
 
 Inspired by Karim Atassi's 7D Framework, as described in [this reel](https://www.instagram.com/reel/Df-8PNbAgkq/). This is an independent implementation, not an official or affiliated app.
 
@@ -75,7 +77,14 @@ Different browsers, devices, addresses, and ports have separate storage. Moving 
 
 ## Hosting and development
 
-To publish with GitHub Pages, select the root of `main` as the publishing source in repository Settings → Pages. After Pages is enabled, pushes to `index.html` update the site. `.nojekyll` keeps it a plain static site.
+To publish with GitHub Pages:
+
+1. Open repository **Settings → Pages** (repository administrators only).
+2. Under Build and deployment, set **Source** to **Deploy from a branch**.
+3. Select **main** and **/ (root)**, then click **Save**.
+4. Wait for the Pages build to complete. GitHub will show the public website link on that settings page.
+
+After Pages is enabled, pushes to `index.html` update the site. `.nojekyll` keeps it a plain static site.
 
 The radar is drawn with Canvas. There are no third-party libraries, CDNs, fonts, or services. `server.mjs` is only a small static file server for local use; the app needs no server-side application logic.
 
