@@ -2,7 +2,7 @@
 
 A simple visual tool for getting clear about where you want to be, seeing where you are now, and closing the gap with small weekly actions.
 
-**[Use the app](https://ahmadxon5678.github.io/7d-radar-compass/)**
+Public site URL after GitHub Pages is enabled: `https://ahmadxon5678.github.io/7d-radar-compass/`
 
 Inspired by Karim Atassi's 7D Framework, as described in [this reel](https://www.instagram.com/reel/Df-8PNbAgkq/). This is an independent implementation, not an official or affiliated app.
 
@@ -51,7 +51,7 @@ Different browsers, devices, addresses, and ports have separate storage. Moving 
 
 ## Hosting and development
 
-The public site uses GitHub Pages from the root of `main`. Push updates to `index.html` to update the site. `.nojekyll` keeps it a plain static site.
+To publish with GitHub Pages, select the root of `main` as the publishing source in repository Settings → Pages. After Pages is enabled, pushes to `index.html` update the site. `.nojekyll` keeps it a plain static site.
 
 The radar is drawn with Canvas. There are no third-party libraries, CDNs, fonts, or services. `server.mjs` is only a small static file server for local use; the app needs no server-side application logic.
 
