@@ -2,7 +2,7 @@
 
 A simple visual tool for getting clear about where you want to be, seeing where you are now, and closing the gap with small weekly actions.
 
-Public site URL after GitHub Pages is enabled: `https://ahmadxon5678.github.io/7d-radar-compass/`
+**[Open the app](https://ahmadxon5678.github.io/7D_radar_compass/)** · [Report a bug](https://github.com/ahmadxon5678/7D_radar_compass/issues)
 
 Inspired by Karim Atassi's 7D Framework, as described in [this reel](https://www.instagram.com/reel/Df-8PNbAgkq/). This is an independent implementation, not an official or affiliated app.
 
@@ -23,8 +23,8 @@ The desktop layout keeps the radar beside the editor. On phones, a fixed bottom 
 With Node.js 18 or newer installed:
 
 ```sh
-git clone https://github.com/ahmadxon5678/7d-radar-compass.git
-cd 7d-radar-compass
+git clone https://github.com/ahmadxon5678/7D_radar_compass.git
+cd 7D_radar_compass
 npm start
 ```
 
