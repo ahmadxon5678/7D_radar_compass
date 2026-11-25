@@ -6,6 +6,8 @@ A simple visual tool for getting clear about where you want to be, seeing where 
 
 Inspired by Karim Atassi's 7D Framework, as described in [this reel](https://www.instagram.com/reel/Df-8PNbAgkq/). This is an independent implementation, not an official or affiliated app.
 
+![Desktop preview of 7D Radar Compass](preview.png)
+
 ## What it does
 
 - Compares Desired (blue) and Current (orange) scores on a live radar chart.
@@ -17,6 +19,20 @@ Inspired by Karim Atassi's 7D Framework, as described in [this reel](https://www
 - Saves changes automatically in your browser, with no account or backend.
 
 The desktop layout keeps the radar beside the editor. On phones, a fixed bottom bar switches between Compass, Dimensions, Gaps, and This Week. Day buttons open any day's action directly.
+
+## The seven dimensions
+
+| Dimension | Examples to reflect on |
+| --- | --- |
+| Physical | Body, sleep, energy |
+| Mental | Emotions, calm, resilience |
+| Social | Friends, family, connection |
+| Vocational | Work, craft, contribution |
+| Financial | Money, saving, stability |
+| Intellectual | Learning, curiosity, skills |
+| Spiritual | Meaning, values, reflection |
+
+Scores are your own assessment, not an objective rating. The starting scores (Desired 8, Current 4) are placeholders; change them to reflect your own situation. A positive gap is an area you want to bring closer to your goal; a negative gap means Current exceeds Desired.
 
 ## Run locally
 
@@ -49,13 +65,21 @@ Goals, scores, actions, and check-in snapshots stay in `localStorage` in your br
 
 Different browsers, devices, addresses, and ports have separate storage. Moving from the downloaded file to localhost or the public site will not automatically transfer existing entries. Clearing browser site data removes your saved work. Private browsing and restricted storage settings may prevent saving.
 
+## Troubleshooting
+
+- **The port is busy:** stop an existing server, or use `PORT=8766 npm start` on macOS/Linux. In PowerShell, run `$env:PORT=8766; npm start`. Changing the port also changes the storage origin.
+- **Saving is unavailable:** use a regular browser window with site storage allowed. A warning appears in the header if localStorage cannot be written.
+- **My previous entries are missing:** open the same address, port, and browser where you originally entered them. Data is not automatically transferred between the standalone file, localhost, and GitHub Pages.
+- **The week has changed:** use Clear Week when ready. The planner does not automatically erase unfinished actions or roll over at midnight.
+- **Where are earlier check-ins?** snapshots are stored locally. The interface currently shows the latest check-in date and total count; it does not include a history browser or export feature.
+
 ## Hosting and development
 
 To publish with GitHub Pages, select the root of `main` as the publishing source in repository Settings → Pages. After Pages is enabled, pushes to `index.html` update the site. `.nojekyll` keeps it a plain static site.
 
 The radar is drawn with Canvas. There are no third-party libraries, CDNs, fonts, or services. `server.mjs` is only a small static file server for local use; the app needs no server-side application logic.
 
-Suggestions and improvements are welcome through GitHub issues and pull requests.
+Suggestions and improvements are welcome through GitHub issues and pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and checks.
 
 ## License
 
